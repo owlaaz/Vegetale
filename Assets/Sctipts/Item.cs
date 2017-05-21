@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class Item
 {
     [SerializeField]
@@ -18,6 +19,11 @@ public class Item
     [SerializeField]
     protected int itemQuantity;
 
+    public string getItemName()
+    {
+        return itemName;
+    }
+
 }
 
 [Serializable]
@@ -30,9 +36,9 @@ public class Plant : Item
     [SerializeField]
     private int maxLevel;
     [SerializeField]
-    private int[] dayToGrowth = { 1, 3, 5, 0 };
+    private int[] dayToGrowth;
     [SerializeField]
-    private int[] dayToDied = { 2, 4, 6, 3 };
+    private int[] dayToDied;
     public bool isMature()
     {
         if (plantLevel == maxLevel)
@@ -74,11 +80,6 @@ public class Plant : Item
     public int getDayToDied(int p_level)
     {
         return dayToDied[p_level];
-    }
-
-    public string getAll()
-    {
-        return this;
     }
 }
 

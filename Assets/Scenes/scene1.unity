@@ -526,71 +526,18 @@ MonoBehaviour:
     dayToDied: -6
     listOfTool: []
     water: 1
-  tomato:
-    itemID: 1
-    itemName: tomato
-    itemDetail: 
-    itemType: 1
-    itemPrice: 200
-    itemQuantity: 1
-    plantDay: 0
-    plantLevel: 0
-    maxLevel: 3
-    dayToGrowth: 01000000030000000500000000000000
-    dayToDied: 02000000040000000600000003000000
-  potato:
-    itemID: 2
-    itemName: potato
-    itemDetail: 
-    itemType: 1
-    itemPrice: 600
-    itemQuantity: 1
-    plantDay: 0
-    plantLevel: 0
-    maxLevel: 3
-    dayToGrowth: 01000000030000000500000000000000
-    dayToDied: 02000000040000000600000003000000
-  vegs:
-  - itemID: 4
-    itemName: poop1
-    itemDetail: 
-    itemType: 2
-    itemPrice: 200
-    itemQuantity: 1
-    toolType: 1
-    effectToGrowth: 3
-    effectToDied: 1
-  - itemID: 5
-    itemName: poop2
-    itemDetail: 
-    itemType: 2
-    itemPrice: 500
-    itemQuantity: 1
-    toolType: 1
-    effectToGrowth: 5
-    effectToDied: 2
-  Poop:
-    itemID: 3
-    itemName: poop
-    itemDetail: 
-    itemType: 2
-    itemPrice: 1000
-    itemQuantity: 1
-    toolType: 1
-    effectToGrowth: 3
-    effectToDied: 1
 --- !u!4 &257227476
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 257227474}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.3679922, y: 1.0630932, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 2056391337}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &319563115
 GameObject:
@@ -1153,7 +1100,7 @@ RectTransform:
   - {fileID: 1740787106}
   - {fileID: 137864664}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1345,6 +1292,53 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 872256246}
+--- !u!1 &928658350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 928658351}
+  - component: {fileID: 928658352}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928658351
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928658350}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3679922, y: 1.0630932, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2056391337}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &928658352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 928658350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b76ddcd42123db43a9c4a6e3328175a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item:
+  - itemID: 999
+    itemName: crop1
+    itemDetail: 
+    itemType: 999
+    itemPrice: 999
+    itemQuantity: 0
 --- !u!1 &1314187856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1405,7 +1399,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1386638104
 GameObject:
@@ -2089,7 +2083,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 257227476}
+  - {fileID: 928658351}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

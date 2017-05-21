@@ -49,20 +49,20 @@ public class GameManager : MonoBehaviour {
 
     }
 
-    public void nextDay()
-    {
-        Farm.Instance.nextDay();
-    }
+    //public void nextDay()
+    //{
+    //    Farm.Instance.nextDay();
+    //}
 
-    public void watering(int index)
-    {
-        Farm.Instance.m_gardens[index].watering();
-    }
+    //public void watering(int index)
+    //{
+    //    Farm.Instance.m_gardens[index].watering();
+    //}
 
-    public void sellCrop()
-    {
-        Farm.Instance.sellCrop();
-    }
+    //public void sellCrop()
+    //{
+    //    Farm.Instance.sellCrop();
+    //}
     
     public void gardenOnClick(int index)
     {
@@ -111,63 +111,9 @@ public class GameManager : MonoBehaviour {
             //Farm.Instance.m_gardens[i].addTool(r_tool);
         });
     }
-    public void saveJson<T>(T[] vegetale, string FileName)
-    {
-        string json = JsonHelper.ToJson(vegetale, true);
-        string path = Path.Combine(Application.persistentDataPath, FileName + ".json");
-        StreamWriter sw = File.CreateText(path);
-        sw.Close();
-        File.WriteAllText(path, json);
-    }
 
-    public void loadJson<T>(ref T[] vegetale, string FileName)
-    {
-        string path = Path.Combine(Application.persistentDataPath, FileName + ".json");
-        string json = File.ReadAllText(path);
-        vegetale = JsonHelper.FromJson<T>(json);
-    }
-
-    bool fileExists(string FileName)
-    {
-        string path = Path.Combine(Application.persistentDataPath, FileName + ".json");
-        if (File.Exists(path))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
 
 
 }
 
-public static class JsonHelper
-{
-    public static T[] FromJson<T>(string json)
-    {
-        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
-        return wrapper.Items;
-    }
 
-    public static string ToJson<T>(T[] array)
-    {
-        Wrapper<T> wrapper = new Wrapper<T>();
-        wrapper.Items = array;
-        return JsonUtility.ToJson(wrapper);
-    }
-
-    public static string ToJson<T>(T[] array, bool prettyPrint)
-    {
-        Wrapper<T> wrapper = new Wrapper<T>();
-        wrapper.Items = array;
-        return JsonUtility.ToJson(wrapper, prettyPrint);
-    }
-
-    [Serializable]
-    private class Wrapper<T>
-    {
-        public T[] Items;
-    }
-}

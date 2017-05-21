@@ -29,10 +29,12 @@ public class Farm : MonoBehaviour {
     public Garden[] m_gardens;
 
     void Start () {
-        Plant[] json_plant = new Plant[3];
-        GameManager.Instance.loadJson(ref json_plant, "vegetale");
-        print(json_plant);
-	}
+        //Plant[] json_plant = new Plant[3];
+        //GameManager.Instance.loadJson(ref json_plant, "vegetable");
+        //print(json_plant[0].getItemName());
+        //print(json_plant[1].getItemName());
+        //print(json_plant[2].getItemName());
+    }
 	
 	// Update is called once per frame
 	void Update () {
