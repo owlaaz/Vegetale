@@ -1,0 +1,26 @@
+{
+    "Items": [
+        {
+            "itemID": 4,
+            "itemName": "poop1",
+            "itemDetail": "",
+            "itemType": 2,
+            "itemPrice": 200.0,
+            "itemQuantity": 1,
+            "toolType": 1,
+            "effectToGrowth": 3,
+            "effectToDied": 1
+        },
+        {
+            "itemID": 5,
+            "itemName": "poop2",
+            "itemDetail": "",
+            "itemType": 2,
+            "itemPrice": 500.0,
+            "itemQuantity": 1,
+            "toolType": 1,
+            "effectToGrowth": 5,
+            "effectToDied": 2
+        }
+    ]
+}

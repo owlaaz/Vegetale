@@ -1,0 +1,75 @@
+{
+    "Items": [
+        {
+            "itemID": 1,
+            "itemName": "tomato",
+            "itemDetail": "",
+            "itemType": 1,
+            "itemPrice": 200.0,
+            "itemQuantity": 1,
+            "plantDay": 0,
+            "plantLevel": 0,
+            "maxLevel": 3,
+            "dayToGrowth": [
+                2,
+                3,
+                4,
+                0
+            ],
+            "dayToDied": [
+                10,
+                5,
+                6,
+                3
+            ]
+        },
+        {
+            "itemID": 2,
+            "itemName": "potato",
+            "itemDetail": "",
+            "itemType": 1,
+            "itemPrice": 300.0,
+            "itemQuantity": 1,
+            "plantDay": 0,
+            "plantLevel": 0,
+            "maxLevel": 3,
+            "dayToGrowth": [
+                2,
+                4,
+                6,
+                0
+            ],
+            "dayToDied": [
+                10,
+                5,
+                6,
+                3
+            ]
+        },
+        {
+            "itemID": 3,
+            "itemName": "pumpkin",
+            "itemDetail": "",
+            "itemType": 1,
+            "itemPrice": 500.0,
+            "itemQuantity": 1,
+            "plantDay": 0,
+            "plantLevel": 0,
+            "maxLevel": 4,
+            "dayToGrowth": [
+                2,
+                3,
+                5,
+                7,
+                0
+            ],
+            "dayToDied": [
+                10,
+                5,
+                7,
+                8,
+                3
+            ]
+        }
+    ]
+}
