@@ -1,0 +1,48 @@
+{
+  "Items": [
+    {
+      "itemID": 2001,
+      "itemName": "fertilizer C",
+      "itemDetail": "",
+      "itemType": 2,
+      "itemPrice": 1000.0,
+      "itemQuantity": 1,
+      "toolType": 20,
+      "effectToGrowth": 2,
+      "effectToDied": 2
+    },
+    {
+      "itemID": 2002,
+      "itemName": "fertilizer B",
+      "itemDetail": "",
+      "itemType": 20,
+      "itemPrice": 2000.0,
+      "itemQuantity": 1,
+      "toolType": 20,
+      "effectToGrowth": 3,
+      "effectToDied": 1
+    },
+    {
+      "itemID": 2003,
+      "itemName": "fertilizer A",
+      "itemDetail": "",
+      "itemType": 20,
+      "itemPrice": 5000.0,
+      "itemQuantity": 1,
+      "toolType": 20,
+      "effectToGrowth": 5,
+      "effectToDied": 1
+    },
+    {
+      "itemID": 2004,
+      "itemName": "growing chemical",
+      "itemDetail": "",
+      "itemType": 20,
+      "itemPrice": 10000.0,
+      "itemQuantity": 1,
+      "toolType": 20,
+      "effectToGrowth": 10,
+      "effectToDied": 0
+    }
+  ]
+}

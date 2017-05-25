@@ -23,7 +23,28 @@ public class Item
     {
         return itemName;
     }
-
+    public int getItemID()
+    {
+        return itemID;
+    }
+    public int getQuantity()
+    {
+        return itemQuantity;
+    }
+    public void addItem(int n)
+    {
+        itemQuantity += n;
+    }
+    public bool removeItem(int n)
+    {
+        if (itemQuantity - n >= 0) 
+        {
+            itemQuantity -= n;
+            return true;
+        }
+        return false;
+        
+    }
 }
 
 [Serializable]
@@ -45,10 +66,7 @@ public class Plant : Item
             return true;
         return false;
     }
-    public int getPlantLevel()
-    {
-        return plantLevel;
-    }
+    
     public bool growth()
     {
         if (plantLevel < maxLevel)
@@ -80,6 +98,14 @@ public class Plant : Item
     public int getDayToDied(int p_level)
     {
         return dayToDied[p_level];
+    }
+    public int getPlantLevel()
+    {
+        return plantLevel;
+    }
+    public int getMaxLevel()
+    {
+        return maxLevel;
     }
 }
 

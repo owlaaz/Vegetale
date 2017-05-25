@@ -1,0 +1,123 @@
+{
+  "Items": [
+    {
+      "itemID": 1001,
+      "itemName": "carrot seed",
+      "itemDetail": "",
+      "itemType": 10,
+      "itemPrice": 500.0,
+      "itemQuantity": 1,
+      "plantDay": 0,
+      "plantLevel": 0,
+      "maxLevel": 3,
+      "dayToGrowth": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "dayToDied": [
+        10,
+        3,
+        2,
+        3
+      ]
+    },
+    {
+      "itemID": 1002,
+      "itemName": "onion seed",
+      "itemDetail": "",
+      "itemType": 10,
+      "itemPrice": 1000.0,
+      "itemQuantity": 2,
+      "plantDay": 0,
+      "plantLevel": 0,
+      "maxLevel": 3,
+      "dayToGrowth": [
+        1,
+        2,
+        2,
+        0
+      ],
+      "dayToDied": [
+        10,
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "itemID": 1003,
+      "itemName": "tomato seed",
+      "itemDetail": "",
+      "itemType": 11,
+      "itemPrice": 2000.0,
+      "itemQuantity": 1,
+      "plantDay": 0,
+      "plantLevel": 0,
+      "maxLevel": 3,
+      "dayToGrowth": [
+        2,
+        2,
+        2,
+        0
+      ],
+      "dayToDied": [
+        10,
+        4,
+        3,
+        3
+      ]
+    },
+    {
+      "itemID": 1004,
+      "itemName": "chili seed",
+      "itemDetail": "",
+      "itemType": 11,
+      "itemPrice": 5000.0,
+      "itemQuantity": 1,
+      "plantDay": 0,
+      "plantLevel": 0,
+      "maxLevel": 4,
+      "dayToGrowth": [
+        2,
+        2,
+        2,
+        2,
+        0
+      ],
+      "dayToDied": [
+        10,
+        4,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "itemID": 1005,
+      "itemName": "cabbage seed",
+      "itemDetail": "",
+      "itemType": 10,
+      "itemPrice": 10000.0,
+      "itemQuantity": 1,
+      "plantDay": 0,
+      "plantLevel": 0,
+      "maxLevel": 4,
+      "dayToGrowth": [
+        3,
+        3,
+        3,
+        4,
+        0
+      ],
+      "dayToDied": [
+        10,
+        5,
+        4,
+        5,
+        3
+      ]
+    }
+  ]
+}

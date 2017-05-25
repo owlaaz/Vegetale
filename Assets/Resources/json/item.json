@@ -1,0 +1,44 @@
+{
+  "Items": [
+    {
+      "itemID": 3001,
+      "itemName": "carrot crop",
+      "itemDetail": "",
+      "itemType": 30,
+      "itemPrice": 150.0,
+      "itemQuantity": 2
+    },
+    {
+      "itemID": 3002,
+      "itemName": "onion crop",
+      "itemDetail": "",
+      "itemType": 30,
+      "itemPrice": 200.0,
+      "itemQuantity": 1
+    },
+    {
+      "itemID": 3003,
+      "itemName": "tomato crop",
+      "itemDetail": "",
+      "itemType": 30,
+      "itemPrice": 150.0,
+      "itemQuantity": 3
+    },
+    {
+      "itemID": 3004,
+      "itemName": "chili crop",
+      "itemDetail": "",
+      "itemType": 30,
+      "itemPrice": 200.0,
+      "itemQuantity": 6
+    },
+    {
+      "itemID": 3005,
+      "itemName": "cabbage crop",
+      "itemDetail": "",
+      "itemType": 30,
+      "itemPrice": 1500.0,
+      "itemQuantity": 7
+    }
+  ]
+}

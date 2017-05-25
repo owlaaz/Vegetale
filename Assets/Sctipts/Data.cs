@@ -18,9 +18,12 @@ public static class Data
 
     public static void loadJson<T>(ref T[] vegetale, string FileName)
     {
-        string path = Path.Combine(Application.persistentDataPath, FileName + ".json");
-        string json = File.ReadAllText(path);
-        vegetale = JsonHelper.FromJson<T>(json);
+        //string path = Path.Combine(Application.persistentDataPath, FileName + ".json");
+        //string json = File.ReadAllText(path);
+        //vegetale = JsonHelper.FromJson<T>(json);
+
+        TextAsset json = Resources.Load<TextAsset>("json/" + FileName.Replace(".json", ""));
+        vegetale = JsonHelper.FromJson<T>(json.text);
     }
 
     static bool fileExists(string FileName)
@@ -65,25 +68,29 @@ public static class Data
 
     public static List<Tools> loadToolsItem()
     {
-        string path = Path.Combine(Application.persistentDataPath, "tools.json");
-        string json = File.ReadAllText(path);
-        Tools[] json_tools = JsonHelper.FromJson<Tools>(json);
+        //string path = Path.Combine(Application.persistentDataPath, "tools.json");
+        //string json = File.ReadAllText(path);
+
+        TextAsset json = Resources.Load<TextAsset>("json/tools");
+        Tools[] json_tools = JsonHelper.FromJson<Tools>(json.text);
         return json_tools.ToList<Tools>();
     }
 
     public static List<Plant> loadPlantItem()
     {
-        string path = Path.Combine(Application.persistentDataPath, "vegetable.json");
-        string json = File.ReadAllText(path);
-        Plant[] json_plant = JsonHelper.FromJson<Plant>(json);
+        //string path = Path.Combine(Application.persistentDataPath, "vegetable.json");
+        //string json = File.ReadAllText(path);
+        TextAsset json = Resources.Load<TextAsset>("json/vegetable");
+        Plant[] json_plant = JsonHelper.FromJson<Plant>(json.text);
         return json_plant.ToList<Plant>();
     }
 
     public static List<Item> loadItem()
     {
-        string path = Path.Combine(Application.persistentDataPath, "item.json");
-        string json = File.ReadAllText(path);
-        Item[] json_item = JsonHelper.FromJson<Item>(json);
+        //string path = Path.Combine(Application.persistentDataPath, "item.json");
+        //string json = File.ReadAllText(path);
+        TextAsset json = Resources.Load<TextAsset>("json/item");
+        Item[] json_item = JsonHelper.FromJson<Item>(json.text);
         return json_item.ToList<Item>();
     }
 
@@ -100,7 +107,7 @@ public static class Data
         }
         else
         {
-            return 1000;
+            return 0;
         }
     }
 }

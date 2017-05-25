@@ -28,12 +28,11 @@ public class Farm : MonoBehaviour {
     // Use this for initialization
     public Garden[] m_gardens;
 
-    void Start () {
-        //Plant[] json_plant = new Plant[3];
-        //GameManager.Instance.loadJson(ref json_plant, "vegetable");
-        //print(json_plant[0].getItemName());
-        //print(json_plant[1].getItemName());
-        //print(json_plant[2].getItemName());
+    void Start() {
+        m_gardens = new Garden[] { new Garden(), new Garden(), new Garden()};
+        m_gardens[0].setGardenTransform(GameManager.Instance.gardens[0]);
+        m_gardens[1].setGardenTransform(GameManager.Instance.gardens[1]);
+        m_gardens[2].setGardenTransform(GameManager.Instance.gardens[2]);
     }
 	
 	// Update is called once per frame
@@ -46,11 +45,9 @@ public class Farm : MonoBehaviour {
         // growth up all gardent
         foreach(Garden garden in m_gardens)
         {
+            if(!garden.isEmpty() && !garden.isDied())
             garden.growthUp();
         }
-        //sell crop
-
-        //check quest
     }
 
     public void sellCrop()
